@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>validate</servlet-name>
+        <servlet-class>package1.validate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddAccount</servlet-name>
+        <servlet-class>package1.AddAccount</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReverseTransaction</servlet-name>
+        <servlet-class>package1.ReverseTransaction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateTransaction</servlet-name>
+        <servlet-class>package1.CreateTransaction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>validate</servlet-name>
+        <url-pattern>/validate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddAccount</servlet-name>
+        <url-pattern>/AddAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReverseTransaction</servlet-name>
+        <url-pattern>/ReverseTransaction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateTransaction</servlet-name>
+        <url-pattern>/CreateTransaction</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

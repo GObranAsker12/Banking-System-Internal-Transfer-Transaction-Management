@@ -1,0 +1,9 @@
+create database BankDB;
+use BankDB;
+create table Customer (userID varchar(50) primary key,userpassword varchar(50),username varchar(50),
+customerName varchar(50),userAddress varchar(50),userMobile varchar(11),userGender varchar(10));
+create table BankTransaction (BT_ID varchar(50) primary key,BT_creationDate timestamp,BT_ammount double,
+BT_fromAccount varchar (50),BT_toAccount varchar(50));
+create table BankAccount (BA_ID varchar (50)primary key,BA_creationDate timestamp,BA_currentBalance double,
+customerID varchar(50));
+insert into Customer values ('IBN1596570','admin','admin','test admin','123 fake street','01295684211','male');

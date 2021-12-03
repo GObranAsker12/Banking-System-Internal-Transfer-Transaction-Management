@@ -1,0 +1,23 @@
+body {
+  background-color: powderblue;
+  text-align: center;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+input{
+	 
+}
+
+form {
+    margin-left: 25%;
+    margin-right:25%;
+    width: 50%;
+}
+tr{
+  border: 10px solid;
+  border-style: double;
+}
